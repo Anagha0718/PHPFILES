@@ -29,7 +29,7 @@ $Edition=$_POST['EDITION'];
 $Publication=$_POST['PUBLICATION'];
 }
 
-$sql = "INSERT INTO details(NAME,BOOK_NO,TITLE,AUTHOR NAME,EDITION,PUBLICATION) VALUES ("$Name","$Booknumbeer","$Title","$Authorname","$Edition","$Publication")";
+$sql = "INSERT INTO details(NAME,BOOK_NO,TITLE,AUTHOR NAME,EDITION,PUBLICATION) VALUES ($Name,$Booknumbeer,$Title,$Authorname,$Edition,$Publication)";
 
 $run =mysqli_query($conn,$sql) or die(mysqli_error());
 if($run){
